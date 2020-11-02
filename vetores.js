@@ -52,3 +52,32 @@ console.log(vetor1)
 // observação: o splice sempre retornará um vetor como resultado, mesmo que o número de elementos removidos esteja entre 0 e 1
 let removido5 = vetor1.splice(3,1)
 console.log(vetor1,removido5)
+
+console.log('----------------------------------------')
+
+// percursos de vetores
+
+// forma 1: for tradicional
+// length -> a quantidade de elementos do vetor
+for(let i=0; i<vetor1.length;i++){
+    console.log(vetor1[i])
+}
+
+console.log('----------------------------------------')
+// forma 2: for .. of
+for(let fruta of vetor1){
+    console.log(fruta)
+}
+
+console.log('----------------------------------------')
+// forma 3: forEach - é um método do vetor que recebe uma função
+vetor1.forEach(
+    function(valor){
+        console.log(valor)
+    }
+)
+
+
+
+ 
+
